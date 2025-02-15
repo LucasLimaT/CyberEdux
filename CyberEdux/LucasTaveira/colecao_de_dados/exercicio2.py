@@ -16,6 +16,7 @@ def lista_normal():
 def criacao_tupla(nome, notas):
     return (nome, notas[0], notas[1], notas[2])
 
+
 def lista_tupla_lista():
     lista = []
     while True:
@@ -30,9 +31,11 @@ def lista_tupla_lista():
             break
     return lista
 
+
 def criacao_dicionario(nome, notas):
     dicionario = {nome: notas}
     return dicionario
+
 
 def lista_de_dicionarios():
     dicionario = []
@@ -63,21 +66,33 @@ def dicionario_com_lista():
             break
     return dicionario
 
+
 variavel = lista_normal()
 i = int(1)
 j = int(0)
-'''print(f"Lista Normal:\n {variavel}")
+print(f"Lista Normal:\n {variavel}")
 while i < len(variavel):
     print(f"Nome: {variavel[j]} - Notas: {variavel[i]}")
-    i+=1
-    if i%4 == 0:
-        j+=3
-        i+=1
+    i += 1
+    if i % 4 == 0:
+        j += 3
+        i += 1
         if j > len(variavel):
             break
-variavel = lista_tupla_lista()'''
+variavel = lista_tupla_lista()
 print(f"Lista com Tupla:\n {variavel}")
 for i in range(len(variavel)):
-    print(f"Nome: {variavel[i][0]} - Notas: {variavel[i][1]},{variavel[i][2]},{variavel[i][3]}")
-#print(f"Dicionario com lista:\n {dicionario_com_lista()}")
-#print(f"Lista de dicionarios:\n {lista_de_dicionarios()}")
+    print(
+        f"Nome: {variavel[i][0]} - Notas: {variavel[i][1]},{variavel[i][2]},{variavel[i][3]}"
+    )
+alunos = dicionario_com_lista()
+for aluno in alunos:
+    print(f"Nome:\n    {aluno} \nNotas:")
+    for nota in alunos[aluno]:
+        print(f"    {nota} ")
+lista_dicionario = lista_de_dicionarios()
+for aluno in lista_dicionario:
+    for nome in aluno:
+        print(
+            f"Nome: {nome} | Notas: {aluno[nome][0]}, {aluno[nome][1]}, {aluno[nome][2]}"
+        )
