@@ -1,0 +1,1 @@
+print("Olá, " + nome := input("Escreva seu nome: ") + ", você mora em " + cidade := input("Escreva a cidade em que você mora: ") + " e tem " + idade := input("Digite sua idade: ") + " anos")

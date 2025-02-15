@@ -1,0 +1,5 @@
+nome = input("Escreva seu nome: ")
+nome = nome.strip()
+quantosEspacos = nome.count(" ")
+nomes = nome.split(" ")
+print(nome[:nome.find(" ")], nomes[quantosEspacos])

@@ -1,0 +1,8 @@
+frase = input("Escreva uma frase: ")
+fraseMinuscula = frase.lower()
+vogalA = fraseMinuscula.count("a")
+vogalE = fraseMinuscula.count("e")
+vogalI = fraseMinuscula.count("i")
+vogalO = fraseMinuscula.count("o")
+vogalU = fraseMinuscula.count("u")
+print("Quantidade de vezes que cada vogal aparece\nA: ", vogalA, "\nE: ", vogalE, "\nI: ", vogalI, "\nO: ", vogalO, "\nU: ", vogalU)
